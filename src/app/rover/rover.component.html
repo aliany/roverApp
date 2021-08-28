@@ -1,0 +1,14 @@
+<div class="text-layout">
+  <h1>Changelle Rover </h1>
+</div>
+<div class="grid">
+  <div class="col">
+    <app-instructions-input (onSedInstruction)="instructionReceived( $event )"></app-instructions-input>
+    <app-instructions-button (onSedInstruction)="instructionReceived( $event )"></app-instructions-button>
+
+  </div>
+  <div class="col">
+    <app-board [movements]="moveList" [isObstacle]="isObstacle" [rover]="rover" (onObstacles)="obstacles($event)"></app-board>
+  </div>
+
+</div>

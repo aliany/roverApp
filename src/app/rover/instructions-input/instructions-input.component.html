@@ -1,0 +1,24 @@
+<div class="p-grid p-fluid">
+  <div class="p-col-12 p-md-4">
+    <div class="p-inputgroup col-10">
+      <input id="float-input-instruction" type="text" pInputText name="instruction" placeholder="Instruction" [(ngModel)]="instruction">
+
+      <button pButton type="button" (click)="executeInstruction()">Enviar</button>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<!-- Mostrar un error al usuario en caso de que no exista algo con el termino de busqueda -->
+<!-- <div class="alert" *ngIf="emptyField">
+  The instruction field cannot be empty
+</div> -->
+<div style="margin-left: 10px;">
+  <small><b>Instrucciones</b></small><br>
+  <small>L: Turn left</small><br>
+  <small>R: Turn right</small><br>
+  <small>F: Move one grid forward</small><br>
+  <small>B: Go back one grid</small><br>
+  <br>
+</div>

@@ -1,0 +1,40 @@
+table{
+  width: 500px;
+}
+
+.table-rover {
+  border: 8px solid rgb(144, 171, 245);
+  background-color: white;
+}
+
+th, td {
+  width: 2%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #000;
+  border-spacing: 0;
+}
+
+.rover {
+  background: black;
+}
+
+.north {
+  border-top: solid 5px orange;
+}
+
+.south {
+  border-bottom: solid 5px orange;
+}
+
+.east {
+  border-right: solid 5px orange;
+}
+
+.west {
+  border-left: solid 5px orange;
+}
+
+.obstacle {
+  background: red;
+}

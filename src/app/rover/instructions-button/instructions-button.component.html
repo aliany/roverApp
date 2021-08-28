@@ -1,0 +1,18 @@
+<div class="col-10">
+    <p-card>
+        <div class="p-text-capitalize">
+            Move the robot by pressing the buttons to move forward, backward or turn left and right, watch out for
+            obstacles.
+        </div>
+        <div style="margin-top: 20px;">
+            <button pButton pRipple type="button" id="F" label="F" class="p-button-rounded" style="margin-left: 0;"
+                (click)="sedInstruction('f')"></button>
+            <button pButton pRipple type="button" id="L" icon="pi pi-replay" class="p-button-outlined p-button-rounded"
+                (click)="sedInstruction('L')"></button>
+            <button pButton pRipple type="button" id="R" icon="pi pi-refresh" class="p-button-outlined p-button-rounded"
+                (click)="sedInstruction('R')"></button>
+            <button pButton pRipple type="button" id="B" label="B" class="p-button-rounded"
+                (click)="sedInstruction('B')"></button>
+        </div>
+    </p-card>
+</div>
